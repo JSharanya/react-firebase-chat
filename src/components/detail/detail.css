@@ -2,7 +2,7 @@
     flex: 1;
 
     .user {
-        padding: 10px 10px;
+        padding: 5px 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -10,8 +10,8 @@
         border-bottom: 1px solid #dddddd35;
 
         img {
-            width: 90px;
-            height: 90px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             object-fit: cover;
         }
@@ -21,7 +21,7 @@
         padding: 30px;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
 
 
         .option {
@@ -45,7 +45,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                margin-top: 20px;
+                margin-top: 15px;
 
 
                 .photoItem {
@@ -95,6 +95,11 @@
 
         &:hover{
             background-color: rgba(109, 5, 26, 0.713);
+        }
+
+        &.logout{
+            padding: 2px;
+            background-color: #1a73e8;
         }
     }
    
