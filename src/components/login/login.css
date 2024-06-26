@@ -60,6 +60,11 @@
             cursor: pointer;
             background-color: #1f8ef1;
 
+            &:disabled{
+                cursor: not-allowed;
+                background-color:#1f8ff172 ;
+            }
+
         }
 
 
