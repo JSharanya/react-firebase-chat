@@ -1,10 +1,10 @@
 import { initializeApp } from "firebase/app";
-import {getAuth} from 'firebase/auth'
-import { getFirestore} from 'firebase/firestore'
-import {getStorage} from 'firebase/storage'
+import { getAuth } from 'firebase/auth'
+import { getFirestore } from 'firebase/firestore'
+import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
+  apiKey: "AIzaSyAM2DtebY8xtTUn4g_FFuyxnzZLwD-gAgw",
   authDomain: "reactchat-64421.firebaseapp.com",
   projectId: "reactchat-64421",
   storageBucket: "reactchat-64421.appspot.com",
