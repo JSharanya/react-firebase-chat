@@ -11,13 +11,15 @@ import {
   updateDoc,
   where,
 } from "firebase/firestore";
-import { db } from "../../lib/firebase";
+
 import {useUserStore} from "../../lib/userStore"
+import { db } from "../../lib/firebase";
 
 const AddUser = () => {
 
   const {currentUser} = useUserStore()
   const [user, setUser] = useState(null);
+
   const handleSearch = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -25,8 +27,6 @@ const AddUser = () => {
 
     try {
       const userRef = collection(db, "users");
-
-      // Create a query against the collection.
       const q = query(userRef, where("username", "==", username));
       const querySnapShot = await getDocs(q);
 

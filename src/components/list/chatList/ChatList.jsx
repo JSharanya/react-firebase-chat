@@ -37,7 +37,7 @@ const ChatList = () => {
     };
   }, [currentUser.id]);
 
-  // console.log(chats);
+  console.log(chats);
 
   return (
     <div className="chatlist">
@@ -53,17 +53,26 @@ const ChatList = () => {
           onClick={() => setAddMode((prev) => !prev)}
         />
       </div>
-      {chats.map((chat) => {
+      {chats.map((chat) => (
         <div className="item" key={chat.chatId}>
           <img src="./avatar.png" alt="" />
           <div className="texts">
-            <span>{chat.user.username}</span>
+            <span>{chat.user.username}</span> 
             <p>{chat.lastMessage}</p>
           </div>
-        </div>;
-      })}
+        </div>
+      ))}
 
-      {addMode && <AddUser />}
+      
+
+      {/* <div className="item">
+        <img src="./avatar.png" alt="" />
+        <div className="texts">
+          <span>jjjjjjj</span>
+          <p>jjjjj</p>
+        </div>
+      </div> */}
+      ;{addMode && <AddUser />}
     </div>
   );
 };
